@@ -1,2 +1,19 @@
 # Ward_TSC
 18th-century literary copyright acquisitions in Ward Trade Sale Catalogues
+
+This repository contains a NetworkX Python script and two datasets comprising of eighteenth-century literary copyright acquisitions that are recorded in catalogues from London trade sale auctions attended by booksellers Aaron and John Ward from 1718–1752, as well as two catalogues from the 1790s.
+
+The data was extracted from 124 trade sale catalogues (TSCs) stored in the Bodleian Library's John Johnson Collection, an archive of Printed Ephemera, at Oxford. They have been digitised in high-resolution by ProQuest from which the data was manually transcribed by this repository's owner. Citations for these catalogues can be found in the Ward TSC Citations.pdf.
+
+Metadata in Ward Trade Sale Catalogue ID and Expenditure Table.csv contains the Bodleian's shelfmark of each document, as well as unique catalogue IDs, total expenditure of copyright acquisitions, the date (Julian convention) of auctions stated in the catalogue and their Gregorian converted dates. It also includes names of sellers that were replicated from Terry Belanger's 1970 doctoral dissertation, "Booksellers' Sales of Copyright: Aspects of the London Book Trade 1718–1768" at Columbia Uiversity (26–31). {N.B. Belanger also includes "amount realized (in pounds)" and some of his totals differ from my own calculations.}
+
+Booksellers' copyright acquisitions are represented in the Network_Ward_TSC.csv which is intended for the NetworkX_Ward_TSC.py script. The dataframe and script consider buyers as nodes and titles as edges to build a bipartite network that is then projected onto a buyer-buyer network. Dates are converted to the Gregorian calendar and are in mm/dd/yyyy format to facilitate date filtering. The script applies the Louvain method for modularity and community detection; identifies top twenty hubs and their degree centralities; identifies top twenty bridges and their inbetweeness centralities; identifies weak ties; and saves a GraphML file for network graph design. Modification to the script is encouraged, and I kindly request that any alternative approaches and insights therein gathered are shared with me via the contact information below. 
+
+Both dataframes in this repository were extracted from a much larger and more comprehensive dataset constructed from the Ward TSCs that is not yet publically available. It includes diplomatic transcriptions, title details such as author, editor, translator, and book format, as well as costs and number of shares purchased for the acquired copyright among other information. I aim to build an open source relational database to store this data and facilitate queries relating to eighteenth-century British copyright history. I invite collaboration from others interested in the intersection of print culture/book history, intellectual property law, digital scholarship, and beyond. Those interested in the comprehensive dataset and/or relational database can contact me for further details, including potential data transfer and collaboration. 
+
+The content of this repository is protected under the MIT License which grants freedom to use, copy, modify, publish, and distribute materials. Under the MIT license, users are required to attribute contributions of the original creator and I can be cited with the information below.
+
+N.B. Due to the manual data extraction method applied to construct this repository's dataframes, they may contain errors or discrepancies. While extensive reconciliation and standardised efforts were made to uphold accurate buyer and title identifications, some inaccuracies may remain. Users are encouraged to verify critical data points and report any discrepancies they encounter to help improve overall accuracy and reliability.
+
+Genevieve Bourjeaurd
+genbourjeaurd[at]tamu[dot]edu
