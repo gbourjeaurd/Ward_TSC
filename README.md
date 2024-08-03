@@ -15,5 +15,4 @@ The content of this repository is protected under the MIT License which grants f
 
 N.B. Due to the manual data extraction method applied to construct this repository's dataframes, they may contain errors or discrepancies. While extensive reconciliation and standardised efforts were made to uphold accurate buyer and title identifications, some inaccuracies may remain. Users are encouraged to verify critical data points and report any discrepancies they encounter to help improve overall accuracy and reliability.
 
-Genevieve Bourjeaurd
-genbourjeaurd[at]tamu[dot]edu
+Genevieve Bourjeaurd, genbourjeaurd[at]tamu[dot]edu
